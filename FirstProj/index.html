@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+</head>
+
+<body>
+
+    <h1>please press the button to generate password</h1>
+
+
+    <button onclick="generatePassword()">PRESS HERE</button>
+    <div class="empty-square">
+        <p id="numberPlaceHolder">
+
+
+        </p>
+
+    </div>
+
+</body>
+
+</html>
+
+
+
+
+
+<script>
+
+    function generatePassword() {
+
+
+
+
+        theMath = Math.floor(Math.random() * 100000 + 5)
+        specialCar = ['!', '@', '#']
+        ranIndex = Math.floor(Math.random() * 3)
+        document.getElementById("numberPlaceHolder").innerText = theMath + specialCar[ranIndex];
+
+
+
+    }
+
+
+
+
+</script>
